@@ -28,7 +28,7 @@ module.exports = function (config, windowParams) {
     }
 
     var urlParams = {
-      response_type: 'code',
+      response_type: config.responseType,
       redirect_uri: config.redirectUri,
       client_id: config.clientId,
       state: generateRandomString(16)
